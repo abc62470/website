@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+  <title>Evan Zone</title>
+  <!-- <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script> -->
+  <!-- <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script> -->
+  <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script> -->
+  <!-- <script src="layer.js"></script> -->
+  <!-- <script src="jquery-3.3.1.min"></script> -->
+</head>
+<body>
+<style>
+  html,body{
+    height: 100%;
+  }
+  body>.edit_btn,body>.myApp{
+    display: block;
+  }
+</style>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html,body{
+    height: 100%;
+  }
+  body>*{
+    display: none;
+  }
+  body>.edit_btn,body>.myApp{
+    display: block;
+  }
+  body>.myApp{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1533638726760&di=d40afa19a367bd2624fab78d913ae9f9&imgtype=0&src=http%3A%2F%2Fww2.sinaimg.cn%2Flarge%2F005ZPFNXgw1f3dkg0uoibj30yc0o4wm8.jpg') center center;
+    background-size: cover;
+  }
+  body>.myApp:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.04);
+  }
+  body>.myApp:after{
+    content: '</html>';
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    color: #fff;
+    letter-spacing: 0.2px;
+  }
+</style>
+<div class="myApp"></div>
+<!-- <script>
+  $(function () {
+
+    $('body').append('<div class="myApp"></div>');
+  });
+</script> -->
+</body>
+</html>
